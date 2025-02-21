@@ -1,0 +1,177 @@
+.btn-outline-success {
+    color: #9a1213;
+    border-color: #9a1213;
+    width: 125px;
+    margin-right: 5px;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #9a1213;
+    border-color: #9a1213;
+}
+
+header {
+    position: relative;
+    background-color: #f2f1f1;
+    background-image: url(images/fondheader.png);
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#divheader {
+    position: absolute;
+    left: 35%;
+    top: 200px;
+}
+
+#divheader p {
+    width: 80%;
+    text-align: justify;
+    /* pour la profondeur des elements par dessous la navar */
+    z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+    color: #9a1213;
+    font-family: "mapolice";
+}
+
+h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* pour la police */
+@font-face {
+    font-family: "mapolice";
+    src: url(assets/fonts/GreatVibes-Regular.ttf);
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 2;
+    background-color: #f2f1f1;
+    border-bottom: solid 1px #9a1213;
+}
+
+.mr-3 {
+    float: left;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.media-body {
+    text-align: justify;
+}
+
+.media {
+    box-shadow: 1px 1px 3px black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* effet de transition  */
+    transition-property: background-color, color;
+    transition-duration: 2s;
+}
+
+/* Pour manipuler la TRANSITION PROPERTY */
+.media:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+#mission {
+    border-left: 2px solid #9a1213;
+    padding: 30px;
+}
+
+#mission li {
+    /* remplacer les puces par des images */
+    list-style-image: url(images/puce.png);
+}
+
+.formateur {
+    /* offset : decalage */
+    box-shadow: 1px 1px 3px black;
+    text-align: center;
+    padding: 25px;
+}
+
+#diplome {
+    border: solid 1px #9a1213;
+    border-radius: 50%;
+}
+
+#quote {
+    text-align: center;
+    border: double 7px #9a1213;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+footer {
+    border-top: 1px solid #9a1213;
+    border-bottom: 1px solid #9a1213;
+    margin-top: 20px;
+}
+
+footer table td {
+    padding: 8px;
+    border-bottom: 1px solid #9a1213;
+
+}
+
+.contact {
+    background-color: #9a1213;
+    padding: 10px;
+    border-style: double;
+    border: double 5px #f2f1f1;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.modal-title {
+    color: #9a1213;
+    /* Declaration de l'animation */
+    /* on peut pas mettre de chiffre pour
+     un identifiant */
+    animation-name: animehcinq;
+    animation-duration: 2s;
+}
+
+@keyframes animehcinq {
+    from {
+        width: 100%;
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 0%;
+    }
+
+}
+
+.modal-body{
+    text-align: center;
+}
+
+#forminsc input{
+    border-style: none;
+}
+
+#forminsc td{
+    border-bottom: 1px solid silver;
+    padding: 2px;
+    width: 200px;
+}

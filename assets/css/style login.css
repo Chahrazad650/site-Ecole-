@@ -1,0 +1,46 @@
+#parti1 P{
+    width: 70%;
+    text-align: justify;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    animation-name: panim;
+    animation-duration: 9s;
+}
+@keyframes panim {
+    from{
+        opacity: 0.1;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+#parti1{
+    padding-top: 20px;
+}
+form input[type=email],form input[type=password],input[type=text]{
+    border-style: none;
+    outline: none;
+    padding: 3px;
+    width: 88%;
+}
+.zone{
+    border: 1px solid silver;
+  margin-top: 8px;
+    border-radius: 50px;
+    padding-left: 15px;
+   
+}
+form button{
+    width: 150px;
+    background-color: #9a1213;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+#eyes{
+    display: none;
+}
