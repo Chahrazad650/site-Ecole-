@@ -1,0 +1,459 @@
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <!-- Pour les caractères speciaux -->
+    <meta charset="utf-8">
+    <!-- pour la mise en page : utilisation des balises structurantes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- pour la despriction de référencement : pour le moteur de recherche -->
+    <meta name="description" content="Mon 1er site de description d'une ecole">
+    <!-- Bootstrap CSS -->
+    <!-- le bootsrap.min.css met une 1ere couche de style SANS C'EST MOCHE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Ma  feuille de style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mon école</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- la nav barre -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" width="50px" alt=""></a>
+                <!-- C'est le bouton du menu HAMBURGER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Missions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Attestations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="divheader">
+            <h1>Boostez vos connaissances ! </h1>
+            <!-- lorem10 -->
+            <p>
+                Bienvenue sur le site de l'école CHAHRAZAD ! Ici, vous découvrirez un univers dynamique où l'apprentissage se mêle à la créativité.
+                Explorez nos projets, activités et actualités, et partagez avec nous cette aventure éducative enrichissante.
+            </p>
+
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-outline-success">S'inscrire </button>
+
+            <a href="login.html">
+                <button type="" class=" btn btn-outline-success">Se Connecter</button>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- la classe container pour laisser une marge gauche et droite -->
+        <section class="container">
+            <!-- div.row*3 pour 3 lignes -->
+            <!-- sur une ligne y a 12 colonnes -->
+            <div class="row">
+                <div class="col-12" style="text-align: center; padding: 30px;">
+                    <h2>Nos formations</h2>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, non.</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- col telephone md medium et sm tablettes -->
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <img src="images/database.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Les bases de données</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <img src="images/network.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Reseaux informatique</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <img src="images/web.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Developpement web</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <img src="images/mobile.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Developpement mobile</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- La section mission -->
+        <!-- En bootsrap on commence tjrs pas le conteneur simple ou fluide
+        :2 lignes -->
+        <section class="container">
+            <div class="row">
+                <!-- un seul element un seul div -->
+                <div class="col-12" style="text-align: center; padding: 30px;">
+                    <h2>Votre reussite est notre mission</h2>
+                    <!-- lorem15 -->
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae magni ipsa sapiente
+                        ratione esse!</small>
+                </div>
+            </div>
+            <div class="row">
+                <!-- deux elements 2 divs -->
+                <!-- on commence des ecrans du plus petit au plus grand -->
+                <!-- lg pour les televiseurs -->
+                <div class="col-12 col-md-5">
+                    <img src="images/missionnaires.png" width="300" alt="">
+                </div>
+                <div class="col-12 col-md-7" id="mission">
+                    <h3>Sourriez vous êtes formés ! </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe necessitatibus beatae
+                        deserunt. Aperiam atque, officia esse fuga modi blanditiis!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet .</li>
+                        <li>Lorem ipsum dolor sit consectetur.</li>
+                        <li>Lorem ipsum dolor consectetur.</li>
+                        <li>Lorem ipsum consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- La section equipe -->
+        <section class="container">
+            <!-- div.row*2 -->
+            <div class="row">
+                <!-- un seul element une seule div -->
+                <div class="col-12" style="text-align: center; padding: 30px;">
+                    <h2>Rencontrez notre equipe </h2>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus corporis
+                        officiis.</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!-- ON A AJOUTE UNE DIV POUR CHAQUE IMAGE QUI VA PORTER LA MEME
+    CLASSE POUR LA MEME MISE EN FORME  -->
+                    <div class="formateur">
+                        <img src="images/formateur1.jpg" width="300" alt="">
+                        <p>nom prenom <br>formateur en ...
+                            <br><img src="images/facebook.png" alt="">
+                            <img src="images/twitter.png" alt="">
+                            <img src="images/instagram.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="formateur">
+                        <img src="images/formateur2.jpg" width="300" alt="">
+                        <p>nom prenom <br>formateur en ...
+                            <br><img src="images/facebook.png" alt="">
+                            <img src="images/twitter.png" alt="">
+                            <img src="images/instagram.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="formateur">
+                        <img src="images/formateur3.jpg" width="300" alt="">
+                        <p>nom prenom <br>formateur en ...
+                            <br><img src="images/facebook.png" alt="">
+                            <img src="images/twitter.png" alt="">
+                            <img src="images/instagram.png" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section attestation -->
+        <section class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: center; padding: 30px;">
+                    <h2>Premier pas vers votre qualification</h2>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, consequuntur.
+                    </small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7" style="text-align:center;">
+                    <img id="diplome" src="images/graduate.png" width="200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam exercitationem, fuga commodi
+                        ad quae distinctio dolorem? Dicta eligendi maiores magni eos optio sint minus, fugit quos
+                        recusandae tempore sapiente.</p>
+                    <button class="btn btn-outline-success">En savoir plus</button>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div id="quote">
+                        <img src="images/quote60.png" alt="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt, alias reprehenderit ab
+                            nobis doloremque placeat provident deleniti nam asperiores libero vero dolore dicta quo
+                            itaque sed consectetur delectus fugiat.
+                            Harum corporis nemo doloribus architecto optio alias corrupti, odit placeat deserunt,
+                            officia aspernatur dignissimos, velit expedita distinctio laboriosam eveniet molestias
+                            reprehenderit assumenda. Corrupti laborum, libero dignissimos exercitationem provident rem
+                            recusandae.
+                            Sint animi reiciendis corporis ipsa in sequi cum, iusto facilis illo velit fuga id optio
+                            vero quos sed a sunt incidunt maiores! Aliquid alias totam laboriosam assumenda?
+                            Repellendus, deleniti delectus?</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ESPACE INSCRIPTION</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/geek.png" width="150" alt="">
+                    <form action="" >
+                        <!-- Pour que les champs ne dépassent pas le formulaire
+                        on peut scroller le formulaire  -->
+                        <div class="table-responsive">
+
+                            <table id="forminsc">
+                                <tr>
+                                    <td>
+                                        <input type="text" name="nom" id="nom" placeholder="nom">
+                                    <td><span id="spa"></span></td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="prenom" id="prenom" placeholder="prenom">
+                                    <td><span id="spap"></span></td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <label for="">Date et lieu de naissance</label>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="date" name="daten" id="iddaten">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="lieun" id="idlieun" placeholder="Lieu de naissance">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="tel" name="numero" id="idnumero" placeholder="Numero de telephone">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="fb" id="faecbook" placeholder="facebook">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" name="mail" id="eml"
+                                            placeholder="e-mail:exemple@gmail.com">
+                                    </td>
+                                    <td><span id="spem"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="password" name="mdp" id="mdp" placeholder="mot de passe">
+                                    </td>
+                                    <td><span id="spmdp"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-outline-success" >Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pied de page -->
+    <!-- le footer c'est toujours avec le container-fluid -->
+    <footer class="container-fluid">
+        <div class="row" style="background-color:#f2f1f1 ; text-align: right; padding: 10px;">
+
+            <div class="col-12">
+                <img src="images/facebook.png" alt="">
+                <img src="images/twitter.png" alt="">
+                <img src="images/instagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <p style="text-align: center; padding-top: 30px;"><img src="images/logo.png" width="50" alt="">
+                    Lorem ipsum dolor sit amet <br><br> consectetur adipisicing elit. Dolor itaque veniam laboriosam!
+                    Nemo
+                    tempora reprehenderit laudantium maxime consequuntur amet veritatis, et incidunt suscipit delectus
+                    fugiat ipsa ipsum blanditiis molestiae temporibus.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h3>Nos services</h3>
+                <table>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet </td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 col-md-5">
+                <h3>Contacts</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="contact">
+                            <img src="images/address.png" alt="">
+                            <p>PARIS</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="contact">
+                            <img src="images/phone.png" alt="">
+                            <p>+213 793 09 85 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="contact">
+                            <img src="images/fax.png" alt="">
+                            <p>+33 760 51 25 26</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-12 col-md-6">
+                        <div class="contact">
+                            <img src="images/mobilephone.png" alt="">
+                            <p>07 60 51 25 26</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" style="background-color:#f2f1f1 ;">
+            <div class="col-12">
+                <p style="text-align: center;">tous les droits sont résérvés &copy; Chahrazad2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- section exemple -->
+    <!-- <section>  -->
+    <!-- div.row -->
+    <!-- <div class="row"> -->
+    <!-- 2 divs -->
+    <!-- <div class="col-12 col-sm-3 col-md-6" style="background-color: palevioletred;"> -->
+    <!-- element1 -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-sm-9 col-md-6" style="background-color: #e22b49;"> -->
+    <!-- element2 -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <!-- c'est le JS qui dynamise le coté client : sans le menu hamburger ne marchera pas  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/validationInscription.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
